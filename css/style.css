@@ -1,0 +1,504 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, input, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+table, td, form, fieldset {border-collapse:collapse;border-spacing:0;border: none;}
+fieldset,img {border:0;}
+address,caption,cite,code,dfn,em,strong,th,var {
+font-style:normal;font-weight:normal;
+}
+ul, ol, li {list-style:none;}
+caption,th {text-align:left;}
+h1,h2,h3,h4,h5,h6 {font-size:100%;}
+html, body {
+	font-size: 10px;
+	margin: 0;
+	padding: 0;
+}
+a img { border: none;}
+
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+img a {
+	border-width: 0px;
+	border-style: none;
+}
+body {
+	background-color: #D72727;
+	padding: 10% 0 0 0;
+	font-size: 1em;
+	overflow-x: hidden;
+	line-height: 1.9em;
+	font-family: "Trebuchet MS", Tahoma, Verdana, Arial, sans-serif;
+}
+#wrapper {
+	width: 913px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 0 0 40px 0;
+}
+#back-upper {
+	background-image: url(../images/back-upper.jpg);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	height: 26px;
+	width: 913px;
+}
+#back-middle {
+	background-image: url(../images/back-middle.jpg);
+	background-repeat: repeat-y;
+	background-position: 0px 0px;
+	width: 913px;
+}
+#back-bottom {
+	background-image: url(../images/back-bottom.jpg);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	height: 33px;
+	width: 913px;
+}
+
+a:link {color: #F32B2B;}
+a:visited {color: #F32B2B;}
+a:hover {color: #767676;}
+a:active {color: #F32B2B;}
+
+.spacer {
+	font-size: 1px;
+	line-height: 1px;
+	height: 1px;
+	width: 350px;
+	clear: both;
+	color: #000;
+}
+#logo {
+	height: 80px;
+	width: 63px;
+	padding-top: 10px;
+	padding-left: 45px;
+	float: left;
+}
+#logo_name {
+	height: 36px;
+	width: 372px;
+	float: right;
+	padding-top: 30px;
+	padding-right: 50px;
+}
+#footer {
+	width: 100%;
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #333333;
+	visibility: visible;
+	text-align: left;
+	bottom: 3px;
+	left: 0px;
+}
+
+#footer a {color: #333333;}
+
+.hid {display: none;}
+
+#mainframe {
+	width: 550px;
+	min-height: 100px;
+	padding: 50px 0 0 20px;
+	color: #CCC;
+	margin: 0 auto;
+}
+
+/*contact page trick*/
+body#contactpage #mainframe {
+ 	width: 650px;
+}
+
+body#contactpage #mainframe p {
+ 	padding: 0 0 10px 0;
+}
+
+/*front page trick*/
+body#frontpage #mainframe {width: 700px;}
+
+body#frontpage #mainframe p {
+ 	padding: 0 0 10px 0;
+}
+
+#mainframe p {
+	font-size: 14px;
+	font-weight: normal;;
+} 
+#mainframe p span {
+	color: #CB3332;
+	font-size: 2em;
+	font-style: italic;
+}
+#mainframe strong {
+	font-weight: bold;
+}
+#mainframe h1 {
+	font-size: 2.2em;
+	padding: 0 0 10px 0;
+	color: #CB3332;
+	} 
+#mainframe h2 {
+	font-size: 2em;
+	padding: 25px 0 10px 0;
+	color: #CB3332;
+	} 
+#mainframe ul {	font-size: 14px;} 
+#mainframe ul li {
+	list-style-position: inside;
+	list-style-type: square;
+} 
+
+/* MENU */
+
+/*
+
+Alternatively, you can use any other CSS dropdown layout instead. More here:
+    http://www.alvit.de/css-showcase/
+Consult your favourite CSS reference for customising fonts/borders/etc.
+
+*/
+ 
+/* All <ul> tags in the menu including the first level */
+
+#menudiv {}
+
+#menudiv li a span{}
+
+#menudiv li {	
+	background-repeat: no-repeat;
+	background-position: 0px 5px;
+	text-indent: 100em;
+	height: 20px;
+}
+li:hover {
+	cursor: pointer;
+	background-repeat: no-repeat;
+	background-position: 0px 5px;
+}
+
+li#home {
+	background-image: url(../images/menu/images/home.gif);
+	width: 64px;
+}
+li#home:hover {
+	background-image: url(../images/menu/images-red/home.gif);
+	width: 64px;
+	}
+
+
+li#portfolio {
+	background-image: url(../images/menu/images/portfolio.gif);
+	width: 85px;
+	}
+li#portfolio:hover {
+	background-image: url(../images/menu/images-red/portfolio.gif);
+	width: 85px;
+	}
+	
+li#constructions {
+	background-image: url(../images/menu/images/constructions.gif);
+	width: 122px;
+	}
+li#constructions:hover {
+	background-image: url(../images/menu/images-red/constructions.gif);
+	width: 122px;
+	}
+li#paintings {
+	background-image: url(../images/menu/images/paintings.gif);
+	width: 85px;
+	}
+	
+li#paintings:hover {
+	background-image: url(../images/menu/images-red/paintings.gif);
+	width: 85px;
+	}
+	
+	
+li#candles {
+	background-image: url(../images/menu/images/candles.gif);
+	width: 85px;
+	}
+li#candles:hover {
+	background-image: url(../images/menu/images-red/candles.gif);
+	width: 85px;
+	}	
+li#exhibitions {
+	background-image: url(../images/menu/images/who.gif);
+	width: 137px;
+	}
+li#exhibitions:hover {
+	background-image: url(../images/menu/images-red/who.gif);
+	width: 137px;
+	}	
+li#commentary {
+	background-image: url(../images/menu/images/commentary.gif);
+	width: 124px;
+	}
+li#commentary:hover {
+	background-image: url(../images/menu/images-red/commentary.gif);
+	width: 124px;
+	}	
+li#contact {
+	background-image: url(../images/menu/images/contact.gif);
+	width: 89px;
+	}
+li#contact:hover {
+	background-image: url(../images/menu/images-red/contact.gif);
+	width: 89px;
+	}	
+	
+
+#menudiv {
+	width: 560px; 
+	float: right;
+	padding: 10px 0 0 0;
+	margin: 0 0 0 0;
+	 
+}
+
+.menulist, .menulist  ul {
+	list-style: none;
+}
+
+/* Submenus (<ul> tags) are hidden and absolutely positioned downwards from their parent */
+.menulist ul {
+	display: none;
+	position: absolute;
+	top: 10px; /* I'm using ems and px to allow people to zoom their font */
+	left: -1px;
+	width: 200px;
+	margin: 10px 0 0 0;
+	padding: 0px;
+  }
+
+/* Second and third etc. level submenus - position across from parent instead */
+.menulist ul ul {
+ top: -1px; 
+ margin-top: 0;
+ left: 148px;
+ }
+
+ul#listMenu-id-1 {width: 150px;}
+
+/*
+ All menu items (<li> tags). 'float: left' lines them up horizontally, and they are
+ positioned relatively to correctly offset submenus. Also, they have overlapping borders.
+*/
+.menulist li {
+	float: left;
+	display: block;
+	position: relative;
+	/* background: #FED;
+ border: 1px solid #330;*/
+	font-size: 16px;
+	height: 18px;
+	display: block;
+}
+
+/* Items in submenus - override float/border/margin from above, restoring default vertical style */
+.menulist ul li {
+	float: none;
+	margin-bottom: -1px;
+	font-size: 15px;
+	padding: 0;
+	margin: 0;
+/*	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #D1FFBF;*/
+}
+
+/* Mozilla fix */
+/*.menulist ul>li:last-child {
+ margin-bottom: 1px; 
+}*/
+
+/* Links inside the menu */
+.menulist a {
+	display: block;
+}
+.sublinkz a {
+	 
+}
+.sublinkz a:hover, .sublinkz a.highlighted:hover, .sublinkz a:focus {
+}
+.sublinkz a.highlighted {
+}
+/* Lit  items: 'hover' is mouseover, 'highlighted' are parent items to visible menus */
+.menulist a:hover, .menulist a.highlighted:hover, .menulist a:focus {
+}
+.menulist a.highlighted {
+}
+
+
+/* Only style submenu indicators within submenus. */
+.menulist a .subind {
+	display: none;
+}
+.menulist ul a .subind {
+	display: block;
+	float: right;
+}
+
+
+/* 'Escaped Comment' hack for horizontal menubar width in IE5/Mac */
+.menulist a {
+ float: left;
+}
+.menulist ul a {
+ float: none;
+}
+/* \*/
+.menulist a {
+ float: none;
+}
+/* */
+
+
+/*
+ HACKS: IE/Win:
+ A small height on <li> and <a> tags and floating prevents gaps in menu.
+ * html affects <=IE6 and *:first-child+html affects IE7.
+ You may want to move these to browser-specific style sheets.
+*/
+*:first-child+html .menulist ul li {
+ float: left;
+ width: 100%;
+}
+
+* html .menulist ul li {
+ float: left;
+ height: 1%;
+}
+* html .menulist ul a {
+ height: 1%;
+}
+/* End Hacks */
+
+
+/*------------------------*/
+
+
+
+/*-------carousel--------*/
+
+/* Horizontal Carousel */
+
+fieldset p {display: none;}
+
+span.highslide-heading {
+	font-size: 0.9em;
+	font-weight: normal; 
+}
+
+#horizontal_carousel {
+  width: 100%;
+  height: 75px;
+  overflow: hidden;
+  margin: 80px 0 0 47px;
+}
+
+#horizontal_carousel .container {
+  float: left;
+  width: 720px;
+  height: 75px;   
+  overflow: hidden;
+   position: relative; 
+}
+
+#horizontal_carousel ul {
+  margin: 0;
+  padding:0;
+  width: 100000px;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 75px;
+}                      
+
+#horizontal_carousel ul li {
+  width: 90px;
+  height: 75px;
+  text-align: center; 
+  list-style:none;   
+  float:left;
+  display: inline;
+}
+
+#horizontal_carousel .previous_button {
+	float:left;
+	width: 32px;
+	height: 75px;
+	z-index: 100;
+	cursor: pointer;
+	background-image: url(../carousel/themes/carousel/prototype-ui/horizontal/left.png);
+	background-repeat: no-repeat;
+	background-position: 0px 22px;
+	padding: 0 5px;
+}
+
+#horizontal_carousel .previous_button_over {
+  background: url(../carousel/themes/carousel/prototype-ui/horizontal/left_over.png);
+  background-repeat: no-repeat;
+	background-position: 0px 22px;
+	padding: 0 5px;
+}
+
+#horizontal_carousel .previous_button_disabled {
+  background: url(../carousel/themes/carousel/prototype-ui/horizontal/left_disabled.png);
+  cursor: default;
+  background-repeat: no-repeat;
+  background-position: 0px 22px;
+  padding: 0 5px;
+}
+
+#horizontal_carousel .next_button {
+  float:left;  
+  width: 32px;
+  height: 75px;
+  background: url(../carousel/themes/carousel/prototype-ui/horizontal/right.png);
+  background-repeat: no-repeat;
+  background-position: 0px 22px;
+  z-index: 100;
+  cursor: pointer;
+  padding: 0 5px;
+  margin-left: 10px;
+}
+
+#horizontal_carousel .next_button_over {
+  background: url(../carousel/themes/carousel/prototype-ui/horizontal/right_over.png);
+  background-repeat: no-repeat;
+  background-position: 0px 22px;
+  padding: 0 5px;
+}
+
+#horizontal_carousel .next_button_disabled {
+  background: url(../carousel/themes/carousel/prototype-ui/horizontal/right_disabled.png);
+  cursor: default;
+  background-repeat: no-repeat;
+  background-position: 0px 22px;
+  padding: 0 5px;
+}
